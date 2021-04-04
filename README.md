@@ -14,6 +14,7 @@ _For more information, please refer to the [Wiki][wiki]._
 ![](https://www.how2shout.com/wp-content/uploads/2018/01/Best-open-source-Software-platforms.jpg)
 
 ## Table of Contents
+* [Description](#social-network-graph)
 * [Installation](#installation)
 * [Usage example](#usage-example)
 * [Release History](#release-history)
