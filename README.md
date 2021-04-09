@@ -44,7 +44,7 @@ There is no information in this paragraph yet.
 * [Nikita Ishchenko](https://github.com/mykytaishchenko)
 * [Khrystyna Kovalchuk](https://github.com/KhrystynaKovalchuk)
 * [Victoriya Roi](https://github.com/VictoriyaRoy)
-* [VladaOmelchenko](https://github.com/Vlada04)
+* [Vlada Omelchenko](https://github.com/Vlada04)
 * [Kushta Lilia](https://github.com/kushtalilia)
 
 <!-- Markdown link & img dfn's -->
