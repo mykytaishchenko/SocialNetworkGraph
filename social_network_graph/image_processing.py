@@ -1,8 +1,19 @@
+"""Module with functions for working with images."""
+
 from PIL import Image, ImageDraw, ImageOps
 import matplotlib.pyplot as plt
 
 
 def add_images_on_graph(graph, pos: dict, ax) -> None:
+    """The function adds to the nodes of the graph the
+    photos specified in the parameters of the node.
+
+    :param graph: graph to which images will be added.
+    :param pos: dictionary with positions of nodes
+                (key - node, value - nodes position).
+    :param ax: information about the image on which the
+               graph is depicted.
+    """
     fig = plt.gcf()
 
     trans = ax.transData.transform
@@ -22,6 +33,12 @@ def add_images_on_graph(graph, pos: dict, ax) -> None:
 
 
 def round_image(img: Image) -> Image:
+    """The function processes the image and
+    returns it in a rounded form.
+
+    :param img: the image to be made circular.
+    :return: round image.
+    """
     mask = Image.new('L', img.size)
     draw = ImageDraw.Draw(mask)
     draw.ellipse((0, 0) + img.size, fill=255)
