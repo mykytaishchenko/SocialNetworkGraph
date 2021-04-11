@@ -34,6 +34,9 @@ There is no information in this paragraph yet.
     * Added _"Home"_, _"Problem description"_, 
       _"System requirements"_, _"API functionality"_, pages to the project wiki
     * Added `instagrapi_using_example.py` module
+* 0.0.2
+   * Added _"Functional and non-functional requirements"_, _"Description of the data"_, _"Possibilities of modules and libraries"_, _"Data structures"_ pages to the project wiki
+   * Added `networkx_using_example.py` module
 
 
 ## Licence
