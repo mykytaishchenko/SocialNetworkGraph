@@ -27,7 +27,7 @@ _For more information, please refer to the [Wiki][wiki]._
 
 ## Table of Contents
 * [Description](#social-network-graph)
-* [Instructions](#installation)
+* [Instructions](#instructions)
 * [Structure](#structure)
 * [Usage example](#usage-example)
 * [Release History](#release-history)
