@@ -3,7 +3,7 @@ library for receiving data from Instagram."""
 
 from instagrapi import Client
 from show_account_info import show
-from show_account_info.user import User
+from social_network_graph.user import User
 
 
 LOGIN = "Insert your Instagram username here."

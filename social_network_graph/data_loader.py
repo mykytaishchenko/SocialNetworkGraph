@@ -2,9 +2,9 @@
 
 import os
 import pickle
-from .user import User
-from instagrapi import Client
-from .config import __GLOBAL_LOGIN__
+from social_network_graph.user import User
+from instagrapi import Client, exceptions
+from social_network_graph.config import __GLOBAL_LOGIN__
 
 
 class Loader:
@@ -39,7 +39,7 @@ class Loader:
         returns path of file with data about user by username.
     """
 
-    path = "data"
+    path = "social_network_graph/data"
     logged = False
     cl = Client()
 
@@ -52,7 +52,7 @@ class Loader:
         Loader.logged = True
 
     @staticmethod
-    def get(username) -> User:
+    def get(username):
         """The function of obtaining data about the user by username.
         If there is actual local data about the user, the method returns them,
         otherwise makes request via the Instagram client.
@@ -66,11 +66,15 @@ class Loader:
         if not Loader.logged:
             Loader.client_login()
 
-        user_info = Loader.cl.user_info_by_username(username)
+        try:
+            user_info = Loader.cl.user_info_by_username(username)
+        except exceptions.UserNotFound:
+            print("No such user.")
+            return None
+
         user_followers = Loader.cl.user_followers(user_info.pk)
         user_following = Loader.cl.user_following(user_info.pk)
         user = User(user_info, user_followers, user_following)
-        print("A")
 
         Loader.save(user, Loader.get_path(username))
 
