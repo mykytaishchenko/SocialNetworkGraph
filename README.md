@@ -41,7 +41,12 @@ To use the program you need:
 3. Wait a few seconds to build a graph
 
 ## Structure
-There is no information in this paragraph yet.
+* `app.py` - module with application
+* `config.py` - module for receiving data to log into an Instagram account
+* `data_loader.py` - module for getting data about Instagram users
+* `image_processing.py` - module with functions for working with images
+* `soc_graph.py` - module with SocialGraph data structure
+* `user.py` - module for storing basic information about Instagram users
 
 ## Usage example
 ### Graph of user followers:
@@ -67,6 +72,7 @@ There is no information in this paragraph yet.
 
 * 0.0.4
    * Added _"Description of the data for proccesing"_, _"Results of computational experiments"_ pages to the project wiki
+   * Added `app.py`, `config.py`, `data_loader.py`, `image_processing.py`, `soc_graph.py`, `user.py` modules
 
 * 0.0.5
    * Added _"Analysis of results"_ page to the project wiki
