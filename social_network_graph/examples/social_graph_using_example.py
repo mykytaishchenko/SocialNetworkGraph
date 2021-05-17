@@ -7,6 +7,10 @@ from social_network_graph.soc_graph import SocialGraph
 
 if __name__ == "__main__":
     Loader.path = "../social_network_graph/data"  # path where to save user data
-    soc_graph = SocialGraph("social_network_graph")
+    soc_graph = SocialGraph("vlados.o4")
+    soc_graph.draw()
+    soc_graph.show()
+
+    soc_graph = SocialGraph("smth.nick", "irashkaa")
     soc_graph.draw()
     soc_graph.show()
