@@ -44,7 +44,7 @@ To use the program you need:
 There is no information in this paragraph yet.
 
 ## Usage example
-### Graph of user subscribers:
+### Graph of user followers:
 ![graph_Nick](https://user-images.githubusercontent.com/44781809/118534587-14da8a80-b752-11eb-9a9d-2ac64528b161.png)
 
 ### Search for the shortest path between users:
