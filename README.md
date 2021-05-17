@@ -36,10 +36,9 @@ _For more information, please refer to the [Wiki][wiki]._
 
 ## Instructions
 To use the program you need:
-1. Enter your Instagram login and password to log in
-2. Select the operating mode
-3. Enter the nickname of the certain user (or multiple users in according to the mode)
-4. Wait a few seconds to build a graph
+1. Select the operating mode
+2. Enter the nickname of the certain user (or two users in according to the mode)
+3. Wait a few seconds to build a graph
 
 ## Structure
 There is no information in this paragraph yet.
@@ -62,6 +61,11 @@ There is no information in this paragraph yet.
    * Added _"Description of ADT"_, _"Class diagram of data structures"_, _"Class diagram of ADT"_ pages to the project wiki
    * Added `social_graph_using_example.py` module
 
+* 0.0.4
+   * Added _"Description of the data for proccesing"_, _"Results of computational experiments"_ pages to the project wiki
+
+* 0.0.5
+   * Added _"Analysis of results"_ page to the project wiki
 
 ## Licence
 
