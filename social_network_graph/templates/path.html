@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Social Network Graph</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+          integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+</head>
+<body class="text-center">
+
+
+<nav class="navbar navbar-expand navbar-dark bg-dark" aria-label="Second navbar example">
+    <div class="container-fluid  justify-content-md-center">
+        <a class="navbar-brand" href="#">Social: </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
+                aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="social" href="/">Graph</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Path</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <br>
+        <form method="POST">
+            <input type="text" id="nickname_1" class="form-control w-75 m-auto" name="nickname_1"
+                   placeholder="Instagram username 1"><br>
+            <input type="text" id="nickname_2" class="form-control w-75 m-auto" name="nickname_2"
+                   placeholder="Instagram username 2"><br>
+            <input type="submit" class="btn btn-secondary orange" value="Generate graph"><br><br>
+        </form>
+
+        <div id="formFooter">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <code>{{ message }}</code>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

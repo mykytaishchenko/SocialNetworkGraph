@@ -12,6 +12,7 @@ class User:
     following: dict
         basic information about user following.
     """
+
     def __init__(self, info, followers: dict, following: dict):
         """Setting the class attributes specified in the class
         description."""
@@ -19,3 +20,5 @@ class User:
         self.info = info
         self.followers = followers
         self.following = following
+        self.followers_usernames = [followers[user_id].username for user_id in followers.keys()]
+        self.following_usernames = [following[user_id].username for user_id in following.keys()]

@@ -18,10 +18,19 @@ def get_account(path: str) -> dict:
     :param path: path to file with data needed to login.
     :return: dict with username and password as keys.
     """
+    try:
+        with open(path, 'r') as file:
+            reader = csv.reader(file)
+            return {row[0]: row[1] for row in reader}
+    except FileNotFoundError:
+        print("No login file")
 
-    with open(path, 'r') as file:
-        reader = csv.reader(file)
-        return {row[0]: row[1] for row in reader}
+
+def login(path):
+    global __GLOBAL_LOGIN__
+    __GLOBAL_LOGIN__ = get_account(path)
 
 
-__GLOBAL_LOGIN__ = get_account("account_to_login.csv")
+__GLOBAL_LOGIN__ = {}
+
+login("account_to_login.csv")
